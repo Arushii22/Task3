@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Square</title>
+  <style media="screen">
+    body {
+      background-color: #e4e4e4;
+    }
+
+    h1 {
+      color: #4ECCA3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Finding the sqaure of all the numbers</h1>
+  <script type="text/javascript">
+    function squar(b) {
+      var i, square = [], n;
+      b = b.toString();
+      for (i = 0; i < b.length; i++) {
+        n = Number(b[i]);
+        square.push(n * n);
+      }
+      return Number(square.join(""));
+    }
+    document.write(squar(289));
+  </script>
+</body>
+
+</html>

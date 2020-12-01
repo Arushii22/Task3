@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Array</title>
+  <style media="screen">
+    body {
+      background-color: #e4e4e4;
+    }
+
+    h1 {
+      color: #4ECCA3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Function finding the second largest number in the array.</h1>
+  <script type="text/javascript">
+    function secondLg(a) {
+      a.sort();
+      a.reverse();
+      return a[1];
+    }
+    document.write(secondLg([12, 45, 87, 1, 90]));
+    document.write('\n');
+    document.write(secondLg([4, 24, 78, 95]));
+  </script>
+</body>
+
+</html>

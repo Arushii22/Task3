@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Number Equation</title>
+  <style media="screen">
+    body {
+      background-color: #e4e4e4;
+    }
+
+    h1 {
+      color: #4ECCA3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Function to find out the repetition.</h1>
+  <script type="text/javascript">
+    function repetition(num){
+    var i;
+    num = num.toString();
+    z = num.split('');
+    x = Number(z.length);
+    return(z[x-1] == z[x-2]);
+}
+    document.write(repetition(91299));
+    document.write('\n');
+    document.write(repetition(12345));
+  </script>
+</body>
+
+</html>
